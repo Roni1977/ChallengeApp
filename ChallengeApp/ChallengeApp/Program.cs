@@ -1,6 +1,6 @@
-﻿string imie = "Roland";
-string wiek = "pełnoletni";
-string wiek1 = "niepełnoletni";
+﻿string name = "Roland";
+string age2 = "pełnoletni";
+string age3 = "niepełnoletni";
 bool adult = true;
 int age = 20;
 string resoult1 = "mam na imię";
@@ -14,9 +14,9 @@ char sp = ' ';
 
 if (age >= 18)
 {
-    Console.WriteLine(resoult1 + sp + imie + sp + resoult2 + sp + "lat" + sp + age + sp + resoult3 + sp + wiek);
+    Console.WriteLine(resoult1 + sp + name + sp + resoult2 + sp + "lat" + sp + age + sp + resoult3 + sp + age2);
 }
 else
 {
-    Console.WriteLine(resoult1 + sp + imie + sp + resoult2 + sp + "lat" + sp + age + sp + resoult4 + sp + wiek1);
+    Console.WriteLine(resoult1 + sp + name + sp + resoult2 + sp + "lat" + sp + age + sp + resoult4 + sp + age3);
 }
