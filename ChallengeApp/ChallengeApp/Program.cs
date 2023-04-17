@@ -1,22 +1,27 @@
-﻿string name = "Roland";
-string age2 = "pełnoletni";
-string age3 = "niepełnoletni";
-bool adult = true;
-int age = 20;
-string resoult1 = "mam na imię";
-string resoult2 = "mam";
-string resoult3 = "i jestem";
-string resoult4 = "i nie jestem";
-char sp = ' ';
+﻿Console.WriteLine("zadana liczba to 5422");
+Console.WriteLine(" ");
+int number = 5422;
+string numberInString = number.ToString ();
+char[] letters= numberInString.ToArray ();
+List<char> numbers = new List<char> ();
+numbers.Add('0');
+numbers.Add('1');
+numbers.Add('2');
+numbers.Add('3');
+numbers.Add('4');
+numbers.Add('5');
+numbers.Add('6');
+numbers.Add('7');
+numbers.Add('8');
+numbers.Add('9');
 
-
-
-
-if (age >= 18)
+foreach (var digital in numbers)
 {
-    Console.WriteLine(resoult1 + sp + name + sp + resoult2 + sp + "lat" + sp + age + sp + resoult3 + sp + age2);
+    int count =0 ;  
+    foreach(var Count in letters) 
+    {
+        if (digital == Count)
+        count++;
 }
-else
-{
-    Console.WriteLine(resoult1 + sp + name + sp + resoult2 + sp + "lat" + sp + age + sp + resoult4 + sp + age3);
+    Console.WriteLine(digital + " ilość znaków w zadanej liczbie: " + count);
 }
