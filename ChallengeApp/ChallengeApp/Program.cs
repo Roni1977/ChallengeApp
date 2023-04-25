@@ -12,17 +12,17 @@ employee1.AddScore(5);
 employee1.AddScore(2);
 employee1.AddScore(7);
 
-employee2.AddScore(4);
-employee2.AddScore(2);
-employee2.AddScore(3);
-employee2.AddScore(2);
-employee2.AddScore(7);
+employee2.AddScore(9);
+employee2.AddScore(9);
+employee2.AddScore(9);
+employee2.AddScore(9);
+employee2.AddScore(9);
 
 employee3.AddScore(9);
 employee3.AddScore(9);
-employee3.AddScore(7);
+employee3.AddScore(15);
 employee3.AddScore(8);
-employee3.AddScore(3);
+employee3.AddScore(22);
 
 employee4.AddScore(9);
 employee4.AddScore(7);
@@ -36,12 +36,13 @@ List<Employee> employers = new List<Employee>()
 };
 
 var BestResoult = -1;
-Employee? BestEmployee = null;
+Employee BestEmployee = null;
 
 foreach (var employee in employers)
 {
     if (employee.Result > BestResoult)
     {
+        BestResoult = employee.Result;
         BestEmployee = employee;
     }
  
